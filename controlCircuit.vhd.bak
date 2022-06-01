@@ -1,0 +1,13 @@
+-- Circuito de controle
+
+LIBRARY ieee;
+ USE ieee.std_logic_1164.all;
+	entity controlCircuit is
+		port (
+			
+	end controlCircuit;
+	
+architecture LogicFunc OF controlCircuit IS 
+	begin
+		
+end LogicFunc;
