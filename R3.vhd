@@ -1,29 +1,27 @@
-LIBRARY ieee;
+LIBRARY ieee ;
 USE ieee.std_logic_1164.all;
 
-ENTITY Registers IS
-    PORT(
-       clock			:IN	STD_LOGIC;							-- Sinal do controlador de escrita
-		 data				:IN STD_LOGIC_VECTOR(7 DOWNTO 0);	-- Valor a ser escrito
-       s,				:OUT STD_LOGIC_VECTOR(7 DOWNTO 0)   -- Saída de informações dos registradores
-		 ); 	
-END Registers;
+ENTITY R3 IS
+GENERIC ( N : INTEGER := 8 ) ;
+	PORT ( 
+			R3in : IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
+			Clock : IN STD_LOGIC ;
+			L, w : IN STD_LOGIC ;
+			R3Out : BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0) ) ;
+END R3 ;
 
-ARCHITECTURE behavior OF Registers IS
-
-	PROCESS (ALUop, A, B, clock)
-	SIGNAL R3	: STD_LOGIC_VECTOR(7 DOWNTO 0); 	-- Registradores
+ARCHITECTURE Behavior OF R3 IS
 	BEGIN
-		IF clock'EVENT AND clock = '0' THEN -- Realiza a operação na subida de clock
-			CASE R3 IS
-				WHEN "001" =>
-					R3 <= data;
-				WHEN OTHERS => NULL;
-		 clock = '0' THEN
-				WHEN "000" =>
-					s <= R3;
-				WHEN OTHERS => NULL;
-			END CASE; 
-		END IF;
-	END PROCESS;
-END behavior;
+		PROCESS
+			BEGIN
+				WAIT UNTIL Clock'EVENT AND Clock = '1' ;
+					IF L = '1' THEN
+						Q <= R3in ;
+					ELSE
+						Genbits: FOR i IN 0 TO N-2 LOOP
+						Q(i) <= Q(i+1) ;
+						END LOOP ;
+						Q(N-1) <= w ;
+					END IF ;
+	END PROCESS ;
+END Behavior ;

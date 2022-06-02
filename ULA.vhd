@@ -1,27 +1,22 @@
-LIBRARY ieee;
+LIBRARY ieee ;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_signed.all;
 
-ENTITY ALU IS
-	PORT( 	
-			clock			:IN	STD_LOGIC;
-			ALUop			:IN	STD_LOGIC;
-			A, B			:IN	STD_LOGIC;
-			ALUout 		:OUT  STD_LOGIC);
-END ALU;
+ENTITY ULA IS
+	PORT ( 
+			A, B : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+			AluIn : IN STD_LOGIC ;
+			AluOut : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0) ) ;
+END ULA ;
 
-ARCHITECTURE behavior OF ALU IS
+ARCHITECTURE Behavior OF ULA IS
 	BEGIN
-		PROCESS (ALUop, A, B, clock)
+		PROCESS
 			BEGIN
-				IF clock'EVENT AND clock = '0' THEN -- Realiza a operação na subida de clock
-					CASE ALUop IS
-						WHEN "0" => 
-							ALUout <= A + B;
-						WHEN "1" => 
-							ALUout <= A - B;
-						WHEN OTHERS => NULL;
-					END CASE; 
-				END IF;
-		END PROCESS;
-END behavior;
+					IF AluIn = '1' THEN
+						AluOut <= A + B ;
+					ELSE
+						AluOut <= A - B ;
+					END IF ;
+	END PROCESS ;
+END Behavior ;
