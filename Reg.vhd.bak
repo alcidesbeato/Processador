@@ -17,7 +17,10 @@ ARCHITECTURE Behavior OF R IS
 					IF L = '1' THEN
 						ROut <= Rin ;
 					ELSE
-						Rout<= '0';
+						Genbits: FOR i IN 0 TO 6 LOOP
+						ROut(i) <= ROut(i+1) ;
+						END LOOP ;
+						ROut(7) <= w ;
 					END IF ;
 	END PROCESS ;
 END Behavior ;
