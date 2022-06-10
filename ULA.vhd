@@ -14,7 +14,7 @@ ARCHITECTURE behavior OF ALU IS
 	BEGIN
 		PROCESS (ALUop, A, B, clock)
 			BEGIN
-				IF clock'EVENT AND clock = '0' THEN -- Realiza a operação na subida de clock
+				IF clock'EVENT AND clock = '1' THEN -- Realiza a operação na subida de clock
 					CASE ALUop IS
 						WHEN "0" => 
 							ALUout <= A + B;
