@@ -23,20 +23,20 @@ SIGNAL s0,s1,s2 : STD_LOGIC;
 		ELSIF (Clock'EVENT AND Clock = '1') THEN
 		CASE y IS
 			WHEN A =>
-				IF w = '1' THEN y <= "00" ;
-				ELSE y <= "01" ;
+				IF w = '0' THEN y <= "A" ;
+				ELSE y <= "B" ;
 				END IF;
 			WHEN B => 
-				IF w = '1' THEN y <= "01" ;
-				ELSE y <= "11" ;
+				IF w = '0' THEN y <= "A" ;
+				ELSE y <= "B" ;
 				END IF;
 			WHEN C =>
-				IF w = '1' THEN y <= "10" ;
-				ELSE y <= "10" ;
+				IF w = '0' THEN y <= "A" ;
+				ELSE y <= "C" ;
 				END IF ;
 			WHEN D =>
-				IF w = '1' THEN y <= "11" ;
-				ELSE y <= "10" ;
+				IF w = '0' THEN y <= "A" ;
+				ELSE y <= "D" ;
 				END IF ;
 		END IF ;
 		END CASE ;
