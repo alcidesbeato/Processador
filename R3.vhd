@@ -1,29 +1,32 @@
-LIBRARY ieee;
+LIBRARY ieee ;
 USE ieee.std_logic_1164.all;
 
-ENTITY Registers IS
-    PORT(
-       clock			:IN	STD_LOGIC;							-- Sinal do controlador de escrita
-		 data				:IN STD_LOGIC_VECTOR(7 DOWNTO 0);	-- Valor a ser escrito
-       s,				:OUT STD_LOGIC_VECTOR(7 DOWNTO 0)   -- Saída de informações dos registradores
-		 ); 	
-END Registers;
+ENTITY R3 IS
+	PORT (
+		Dado3In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+		R3In: IN STD_LOGIC;
+		R3Out: IN STD_LOGIC;
+		Reset : IN STD_LOGIC ;
+		Clock : IN STD_LOGIC ;
+		Dado3Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)
+	);
+END R3 ;
 
-ARCHITECTURE behavior OF Registers IS
-
-	PROCESS (ALUop, A, B, clock)
-	SIGNAL R3	: STD_LOGIC_VECTOR(7 DOWNTO 0); 	-- Registradores
+ARCHITECTURE Behavior OF R3 IS
 	BEGIN
-		IF clock'EVENT AND clock = '0' THEN -- Realiza a operação na subida de clock
-			CASE R3 IS
-				WHEN "001" =>
-					R3 <= data;
-				WHEN OTHERS => NULL;
-		 clock = '0' THEN
-				WHEN "000" =>
-					s <= R3;
-				WHEN OTHERS => NULL;
-			END CASE; 
-		END IF;
-	END PROCESS;
-END behavior;
+		PROCESS (Dado3In, R3In, R3Out, Reset, Clock, DadoArmazenado)
+			BEGIN
+			IF Reset = '1' THEN
+				DadoArmazenado <= "00000000";
+			ELSE
+				IF Clock'EVENT AND Clock = '1' THEN
+					IF R3In = '1' THEN
+						DadoArmazenado <= Dado3In ;
+					ELSIF R3Out = '1' THEN
+						Dado3Out <= DadoArmazenado ;
+					END IF ;
+				END IF;
+			END IF;
+		END PROCESS ;
+END Behavior ;

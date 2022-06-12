@@ -1,19 +1,19 @@
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all;
 
-ENTITY R1 IS
+ENTITY RG IS
 	PORT (
-		Dado1In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-		R1In: IN STD_LOGIC;
-		R1Out: IN STD_LOGIC;
+		DadoGIn : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+		RGIn: IN STD_LOGIC;
+		RGOut: IN STD_LOGIC;
 		Reset : IN STD_LOGIC ;
 		Clock : IN STD_LOGIC ;
-		Dado1Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		DadoGOut : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)
 	);
-END R1 ;
+END RG ;
 
-ARCHITECTURE Behavior OF R1 IS
+ARCHITECTURE Behavior OF RG IS
 	BEGIN
 		PROCESS
 			BEGIN
@@ -21,10 +21,10 @@ ARCHITECTURE Behavior OF R1 IS
 				DadoArmazenado <= '00000000';
 			ELSE
 				WAIT UNTIL Clock'EVENT AND Clock = '1' ;
-					IF R1In = '1' THEN
-						DadoArmazenado <= Dado1In ;
-					ELSIF R1Out = '1' THEN
-						Dado1Out <= DadoArmazenado ;
+					IF RGIn = '1' THEN
+						DadoArmazenado <= DadoGIn ;
+					ELSIF RGOut = '1' THEN
+						DadoGOut <= DadoArmazenado ;
 					END IF ;
 			END IF;
 		END PROCESS ;
