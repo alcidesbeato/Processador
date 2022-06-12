@@ -14,16 +14,15 @@ END RA ;
 
 ARCHITECTURE Behavior OF RA IS
 	BEGIN
-		PROCESS (DadoAIn, RAIn, Reset, Clock, DadoArmazenado)
+		PROCESS
 			BEGIN
 			IF Reset = '1' THEN
-				DadoArmazenado <= "00000000";
+				DadoArmazenado <= '00000000';
 			ELSE
-				IF Clock'EVENT AND Clock = '1' THEN
+				WAIT UNTIL Clock'EVENT AND Clock = '1' ;
 					IF RAIn = '1' THEN
 						DadoArmazenado <= DadoAIn ;
 					END IF ;
-				END IF;
 			END IF;
 		END PROCESS ;
 END Behavior ;

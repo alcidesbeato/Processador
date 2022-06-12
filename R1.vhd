@@ -2,26 +2,31 @@ LIBRARY ieee ;
 USE ieee.std_logic_1164.all;
 
 ENTITY R1 IS
-GENERIC ( N : INTEGER := 8 ) ;
-	PORT ( 
-			R1in : IN STD_LOGIC_VECTOR(N-1 DOWNTO 0) ;
-			Clock : IN STD_LOGIC ;
-			L, w : IN STD_LOGIC ;
-			R1Out : BUFFER STD_LOGIC_VECTOR(N-1 DOWNTO 0) ) ;
+	PORT (
+		Dado1In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
+		R1In: IN STD_LOGIC;
+		R1Out: IN STD_LOGIC;
+		Reset : IN STD_LOGIC ;
+		Clock : IN STD_LOGIC ;
+		Dado1Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)
+	);
 END R1 ;
 
 ARCHITECTURE Behavior OF R1 IS
 	BEGIN
-		PROCESS
+		PROCESS (Dado1In, R1In, R1Out, Reset, Clock, DadoArmazenado)
 			BEGIN
-				WAIT UNTIL Clock'EVENT AND Clock = '1' ;
-					IF L = '1' THEN
-						Q <= R1in ;
-					ELSE
-						Genbits: FOR i IN 0 TO N-2 LOOP
-						Q(i) <= Q(i+1) ;
-						END LOOP ;
-						Q(N-1) <= w ;
+			IF Reset = '1' THEN
+				DadoArmazenado <= "00000000";
+			ELSE
+				IF Clock'EVENT AND Clock = '1' THEN
+					IF R1In = '1' THEN
+						DadoArmazenado <= Dado1In ;
+					ELSIF R1Out = '1' THEN
+						Dado1Out <= DadoArmazenado ;
 					END IF ;
-	END PROCESS ;
+				END IF;
+			END IF;
+		END PROCESS ;
 END Behavior ;
