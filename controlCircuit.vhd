@@ -16,6 +16,7 @@ BEGIN
 	PROCESS(Clock, Reset,W, Func)
 	BEGIN
 		IF Clock'EVENT AND Clock = '1' THEN
+		-- Funciona apenas quando clock for igual a 1
 			CASE Func IS
 				WHEN "00" => 
 				-- LOAD

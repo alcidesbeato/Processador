@@ -18,12 +18,16 @@ ARCHITECTURE Behavior OF R3 IS
 		PROCESS (Dado3In, R3In, R3Out, Reset, Clock, DadoArmazenado)
 			BEGIN
 			IF Reset = '1' THEN
+				-- Zerando o valor do Dado
 				DadoArmazenado <= "00000000";
 			ELSE
 				IF Clock'EVENT AND Clock = '1' THEN
+					-- Funciona apenas quando clock for igual a 1
 					IF R3In = '1' THEN
+						-- Dado é armazenado
 						DadoArmazenado <= Dado3In ;
 					ELSIF R3Out = '1' THEN
+						-- Dado é retirado
 						Dado3Out <= DadoArmazenado ;
 					END IF ;
 				END IF;

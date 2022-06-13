@@ -17,10 +17,13 @@ ARCHITECTURE Behavior OF RA IS
 		PROCESS (DadoAIn, RAIn, Reset, Clock, DadoArmazenado)
 			BEGIN
 			IF Reset = '1' THEN
+				-- Zerando o valor do Dado
 				DadoArmazenado <= "00000000";
 			ELSE
 				IF Clock'EVENT AND Clock = '1' THEN
+					-- Funciona apenas quando clock for igual a 1
 					IF RAIn = '1' THEN
+						-- Dado é armazenado
 						DadoArmazenado <= DadoAIn ;
 					END IF ;
 				END IF;

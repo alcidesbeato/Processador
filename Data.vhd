@@ -14,6 +14,7 @@ ARCHITECTURE Behavior OF Data IS
 		PROCESS(DadoIn, Extern)
 			BEGIN
 			IF Extern = '1' THEN
+				--O dado entra apenas quando sinal de Extern for 1
                 DadoOut <= DadoIn;
 			END IF;
 		END PROCESS ;

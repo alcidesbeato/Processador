@@ -18,12 +18,16 @@ ARCHITECTURE Behavior OF R2 IS
 		PROCESS (Dado2In, R2In, R2Out, Reset, Clock, DadoArmazenado)
 			BEGIN
 			IF Reset = '1' THEN
+				-- Zerando o valor do Dado
 				DadoArmazenado <= "00000000";
 			ELSE
 				IF Clock'EVENT AND Clock = '1' THEN
-					IF R2In = '1' THEN
+					-- Funciona apenas quando clock for igual a 1
+					IF R2In = '1' 
+						-- Dado é armazenado
 						DadoArmazenado <= Dado2In ;
 					ELSIF R2Out = '1' THEN
+						-- Dado é retirado
 						Dado2Out <= DadoArmazenado ;
 					END IF ;
 				END IF;

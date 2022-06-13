@@ -8,6 +8,7 @@ ENTITY Processador IS
 END Processador;
 
 ARCHITECTURE Behavior OF Processador IS
+    -- Componente do Dado
     COMPONENT Data IS
         PORT (
             DadoIn : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -16,6 +17,7 @@ ARCHITECTURE Behavior OF Processador IS
         );
     END COMPONENT ;
 
+    -- Componente do Registrador 0
     COMPONENT R0 IS
         PORT (
             Dado0In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -28,6 +30,7 @@ ARCHITECTURE Behavior OF Processador IS
         );
     END COMPONENT ;
 
+    -- Componente do Registrador 1
     COMPONENT R1 IS
         PORT (
             Dado1In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -40,6 +43,7 @@ ARCHITECTURE Behavior OF Processador IS
         );
     END COMPONENT ;
 
+    -- Componente do Registrador 2
     COMPONENT R2 IS
         PORT (
             Dado2In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -52,6 +56,7 @@ ARCHITECTURE Behavior OF Processador IS
         );
     END COMPONENT ;
 
+    -- Componente do Registrador 3
     COMPONENT R3 IS
         PORT (
             Dado3In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -64,6 +69,7 @@ ARCHITECTURE Behavior OF Processador IS
         );
     END COMPONENT ;
 
+    -- Componente do Registrador G
     COMPONENT RG IS
         PORT (
             DadoGIn : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -75,7 +81,8 @@ ARCHITECTURE Behavior OF Processador IS
             DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)
         );
     END COMPONENT ;
-
+        
+    -- Componente do Registrador A
     COMPONENT RA IS
 	PORT (
 		DadoAIn : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -86,7 +93,8 @@ ARCHITECTURE Behavior OF Processador IS
 		DadoArmazenado: BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
     END COMPONENT ;
-
+        
+    -- Componente da Unidade Logica Aritmetica
    COMPONENT ULA IS
 	PORT ( 
 			A, B : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
@@ -99,6 +107,7 @@ ARCHITECTURE Behavior OF Processador IS
 			) ;
     END COMPONENT ;
 
+    -- Componente do circuito de controle
     COMPONENT controlCircuit IS
     PORT (
         Clock, Reset: IN STD_LOGIC;
@@ -109,7 +118,7 @@ ARCHITECTURE Behavior OF Processador IS
     END COMPONENT;
 
     SIGNAL R0_In, R0_Out, R1_In, R1_Out, R2_In, R2_Out, R3_In, R3_Out, RG_In, RG_Out, RA_In,Add_Sub, extern, done  : STD_LOGIC;
-	 SIGNAL w,func: STD_LOGIC_VECTOR(1 DOWNTO 0);
+	SIGNAL w,func: STD_LOGIC_VECTOR(1 DOWNTO 0);
     SIGNAL Dado_In, Dado_Out, Dado0_Out, Dado1_Out, Dado2_Out, Dado3_Out, DadoA_Out, DadoG_Out  : STD_LOGIC_VECTOR(7 DOWNTO 0);
     
 BEGIN
