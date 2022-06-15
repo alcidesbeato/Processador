@@ -124,6 +124,8 @@ ARCHITECTURE Behavior OF Processador IS
     
 BEGIN
         Dado: DATA PORT MAP (Dado_In, extern, Dado_Out); -- Componente do dado
+        
+        ControleCircuito: controlCircuit PORT MAP (Clock, Reset, w, func, R0_In, R0_Out, R1_In, R1_Out, R2_In, R3_Out, RG_In, RG_Out, RA_In, Add_Sub, extern, done); -- Componente da unidade de controle
 
         Reg0: R0 PORT MAP (Dado_Out, R0_In, R0_Out, Reset, Clock, Dado0_Out); -- Componente do registrador 0
 
@@ -139,5 +141,4 @@ BEGIN
 
         UnidadeLogicaAritmetica: ULA PORT MAP(DadoA_Out, Dado_Out, Add_Sub, DadoG_Out, RA_In, Reset, Clock); -- Componente da unidade logica aritmetica
         
-        ControleCircuito: controlCircuit PORT MAP (Clock, Reset, w, func, R0_In, R0_Out, R1_In, R1_Out, R2_In, R3_Out, RG_In, RG_Out, RA_In, Add_Sub, extern, done); -- Componente da unidade de controle
 END Behavior ;

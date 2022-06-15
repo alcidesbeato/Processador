@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Alcides/Documents/GitHub/Processador/simulation/modelsim
 Econtrolcircuit
-Z1 w1655205435
+Z1 w1655293021
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 2
@@ -23,23 +23,23 @@ V0@GcRQBlhCgBDF]K4nTjo2
 !s100 dhjEV@CRODIGDo:1o:oG32
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1655255162
+Z7 !s110 1655302262
 !i10b 1
-Z8 !s108 1655255161.000000
+Z8 !s108 1655302262.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd|
 Z10 !s107 C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
-Alogicfunc
+Abehavior
 R2
 R3
 DEx4 work 14 controlcircuit 0 22 0@GcRQBlhCgBDF]K4nTjo2
 !i122 2
 l15
-L14 62
-V`fZzERCX5LcAKHnFkFWiO1
-!s100 o^S23;=S7][9i^Xm2YV?m3
+L14 64
+VRA^a24N=HGnifi<S:n`OT1
+!s100 e4:aHTRT_:GY:Z@4_iFhm1
 R6
 31
 R7
@@ -51,20 +51,20 @@ R10
 R11
 R12
 Edata
-R1
+Z13 w1655294339
 R2
 R3
 !i122 1
 R0
-Z13 8C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd
-Z14 FC:/Users/Alcides/Documents/GitHub/Processador/Data.vhd
+Z14 8C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd
+Z15 FC:/Users/Alcides/Documents/GitHub/Processador/Data.vhd
 l0
 L4 1
 V4SA`@:BkkGA6C;<YCEI4W0
 !s100 QoUR]T7MN^3_Scgc>i;hB1
 R6
 31
-Z15 !s110 1655255161
+R7
 !i10b 1
 R8
 Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd|
@@ -83,7 +83,7 @@ Vm2ho6TbfnU<A?51CKhMBh2
 !s100 96@`keH?2286]gi@jhb:e0
 R6
 31
-R15
+R7
 !i10b 1
 R8
 R16
@@ -92,7 +92,7 @@ R17
 R11
 R12
 Eprocessador
-Z18 w1655253670
+Z18 w1655302180
 R2
 R3
 !i122 0
@@ -105,7 +105,7 @@ Vfn`zXSO;C<DCUhURlkZW=3
 !s100 IUU6@X;e4:>C]2OC84Yo>0
 R6
 31
-R15
+R7
 !i10b 1
 R8
 Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd|
@@ -118,13 +118,13 @@ R2
 R3
 DEx4 work 11 processador 0 22 fn`zXSO;C<DCUhURlkZW=3
 !i122 0
-l124
-L10 134
-VDVZ?BJP45]TBW_HPL1EFY2
-!s100 dABKEHGHo;BHXhj7fG=<Q0
+l125
+L10 135
+Voo4UJTzY]16I>D0bE;[@F0
+!s100 `WW<MTj7:@SzVS[1?Va^90
 R6
 31
-R15
+R7
 !i10b 1
 R8
 R21
@@ -133,24 +133,24 @@ R22
 R11
 R12
 Er0
-R1
+Z23 w1655294056
 R2
 R3
 !i122 4
 R0
-Z23 8C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd
-Z24 FC:/Users/Alcides/Documents/GitHub/Processador/R0.vhd
+Z24 8C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd
+Z25 FC:/Users/Alcides/Documents/GitHub/Processador/R0.vhd
 l0
 L4 1
 VQC83g0:5?G0OckQ61fgf:0
 !s100 hV06ERHQ:bd4BA[ZkMchH2
 R6
 31
-Z25 !s110 1655255164
+Z26 !s110 1655302263
 !i10b 1
-Z26 !s108 1655255164.000000
-Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd|
-Z28 !s107 C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd|
+Z27 !s108 1655302263.000000
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd|
+Z29 !s107 C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd|
 !i113 1
 R11
 R12
@@ -160,38 +160,38 @@ R3
 DEx4 work 2 r0 0 22 QC83g0:5?G0OckQ61fgf:0
 !i122 4
 l17
-Z29 L16 21
+Z30 L16 21
 VJ:CSXH6CUD5PA;8_W56ag2
 !s100 o3M:WCQlkA7?Y0O=ac8NT3
 R6
 31
-R25
-!i10b 1
 R26
+!i10b 1
 R27
 R28
+R29
 !i113 1
 R11
 R12
 Er1
-Z30 w1655205769
+Z31 w1655294158
 R2
 R3
 !i122 5
 R0
-Z31 8C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd
-Z32 FC:/Users/Alcides/Documents/GitHub/Processador/R1.vhd
+Z32 8C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd
+Z33 FC:/Users/Alcides/Documents/GitHub/Processador/R1.vhd
 l0
 L4 1
 Vo^4TbU?UQEQXj=LIL[aza1
 !s100 gD4kIN]kg2@KClJ:GDUQe0
 R6
 31
-R25
-!i10b 1
 R26
-Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd|
-Z34 !s107 C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd|
+!i10b 1
+R27
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd|
+Z35 !s107 C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd|
 !i113 1
 R11
 R12
@@ -201,36 +201,36 @@ R3
 DEx4 work 2 r1 0 22 o^4TbU?UQEQXj=LIL[aza1
 !i122 5
 l17
-R29
+R30
 V3bM0eo1lZlhe2EngHnkfO3
 !s100 F54`UD4H?b1nA0bQnAc=c2
 R6
 31
-R25
-!i10b 1
 R26
-R33
+!i10b 1
+R27
 R34
+R35
 !i113 1
 R11
 R12
 Er2
-Z35 w1655205795
+Z36 w1655294153
 R2
 R3
 !i122 6
 R0
-Z36 8C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd
-Z37 FC:/Users/Alcides/Documents/GitHub/Processador/R2.vhd
+Z37 8C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd
+Z38 FC:/Users/Alcides/Documents/GitHub/Processador/R2.vhd
 l0
 L4 1
 V[fmIgn4Z023]@<@4?aik40
 !s100 TRhBR;TU12`QH5dbb41QO1
 R6
 31
-Z38 !s110 1655255165
-!i10b 1
 R26
+!i10b 1
+R27
 Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd|
 Z40 !s107 C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd|
 !i113 1
@@ -242,36 +242,36 @@ R3
 DEx4 work 2 r2 0 22 [fmIgn4Z023]@<@4?aik40
 !i122 6
 l17
-R29
+R30
 VTLzD;bVWXmP@I_XdS]RKg0
 !s100 aMTNVICgLaPT;A61[>EjH1
 R6
 31
-R38
-!i10b 1
 R26
+!i10b 1
+R27
 R39
 R40
 !i113 1
 R11
 R12
 Er3
-R1
+Z41 w1655294208
 R2
 R3
 !i122 7
 R0
-Z41 8C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd
-Z42 FC:/Users/Alcides/Documents/GitHub/Processador/R3.vhd
+Z42 8C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd
+Z43 FC:/Users/Alcides/Documents/GitHub/Processador/R3.vhd
 l0
 L4 1
 V:OKUT1PD:1B4eB_5mm;Pm1
 !s100 W49NJ<fYh`LHzml>KEokQ0
 R6
 31
-R38
+R26
 !i10b 1
-Z43 !s108 1655255165.000000
+R27
 Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd|
 Z45 !s107 C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd|
 !i113 1
@@ -283,21 +283,21 @@ R3
 DEx4 work 2 r3 0 22 :OKUT1PD:1B4eB_5mm;Pm1
 !i122 7
 l17
-R29
+R30
 VI=[AhoFVFkf1hM9`?47A>1
 !s100 CELEGHF:6e8Pm[oj;<6=o1
 R6
 31
-R38
+R26
 !i10b 1
-R43
+R27
 R44
 R45
 !i113 1
 R11
 R12
 Era
-Z46 w1655254202
+Z46 w1655294237
 R2
 R3
 !i122 8
@@ -310,9 +310,9 @@ VPSX`SbHLf]k<hUE5H5YUd1
 !s100 SO;dn732bTM9QeJJ;^K^h2
 R6
 31
-R38
+R26
 !i10b 1
-R43
+R27
 Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/RA.vhd|
 Z50 !s107 C:/Users/Alcides/Documents/GitHub/Processador/RA.vhd|
 !i113 1
@@ -329,31 +329,31 @@ Vjh1AK@PzJCBZ]2oVT5LHH2
 !s100 84:d[Rj`5lL6mBJLdNCol3
 R6
 31
-R38
+R26
 !i10b 1
-R43
+R27
 R49
 R50
 !i113 1
 R11
 R12
 Erg
-R1
+Z51 w1655294269
 R2
 R3
 !i122 9
 R0
-Z51 8C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd
-Z52 FC:/Users/Alcides/Documents/GitHub/Processador/RG.vhd
+Z52 8C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd
+Z53 FC:/Users/Alcides/Documents/GitHub/Processador/RG.vhd
 l0
 L4 1
 Vl98ic1nBgF1H]US;S7ekP2
 !s100 5zJ5J6ZmVc<PO2=?4CheH2
 R6
 31
-Z53 !s110 1655255166
+Z54 !s110 1655302264
 !i10b 1
-Z54 !s108 1655255166.000000
+R27
 Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd|
 !s107 C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd|
 !i113 1
@@ -365,61 +365,61 @@ R3
 DEx4 work 2 rg 0 22 l98ic1nBgF1H]US;S7ekP2
 !i122 9
 l17
-R29
+R30
 VJ9M9<8P1e8V6WOcNFjl`40
 !s100 8<Fl;P_:0L:zeECAWS[J_0
 R6
 31
-R53
-!i10b 1
 R54
+!i10b 1
+R27
 R55
 Z56 !s107 C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd|
 !i113 1
 R11
 R12
 Eula
-R1
-Z57 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z58 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z57 w1655294309
+Z58 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z59 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 R2
 R3
 !i122 3
 R0
-Z59 8C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd
-Z60 FC:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd
+Z60 8C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd
+Z61 FC:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd
 l0
 L5 1
 VNG13eB8m4N=L[9I;]>OJJ2
 !s100 78Y7^HTZ667UNhRlNO0S03
 R6
 31
-Z61 !s110 1655255163
+R26
 !i10b 1
-Z62 !s108 1655255163.000000
-Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd|
-Z64 !s107 C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd|
+R8
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd|
+Z63 !s107 C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd|
 !i113 1
 R11
 R12
 Abehavior
-R57
 R58
+R59
 R2
 R3
 DEx4 work 3 ula 0 22 NG13eB8m4N=L[9I;]>OJJ2
 !i122 3
 l19
 L18 25
-VWcI[KU1OMAc_>]3e38?f^3
-!s100 X?mh6BT=S@[kNhN^bhZV<0
+Vl^=11Gf[^O>=@CBQ;1?GS0
+!s100 K<g>5`gKhAnA[<>j@OmQJ3
 R6
 31
-R61
+R26
 !i10b 1
+R8
 R62
 R63
-R64
 !i113 1
 R11
 R12
