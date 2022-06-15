@@ -20,14 +20,14 @@ ARCHITECTURE Behavior OF ULA IS
 		PROCESS(A,B, AddSub, RAIn, Reset, Clock)
 			BEGIN
 			IF Reset = '1' THEN
-				-- Zerando o valor do Dado
+				-- Sinal de reset ativo, zera o valor do dado armazenado
 				DadoArmazenado <= "00000000";
 			ELSE
 				IF Clock'EVENT AND Clock = '1' THEN
 					-- Funciona apenas quando clock for igual a 1
 
 					IF RAIn = '1' THEN
-						-- Dado é armazenado
+						-- Sinal de entrada ativo, dado é armazenado
 						DadoArmazenado <= A ;
 					ELSIF AddSub = '0' THEN
 						-- Soma é executada

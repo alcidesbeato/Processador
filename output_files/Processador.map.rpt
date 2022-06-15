@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Processador
-Tue Jun 14 21:31:27 2022
+Wed Jun 15 08:51:51 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Jun 14 21:31:27 2022       ;
+; Analysis & Elaboration Status ; Successful - Wed Jun 15 08:51:51 2022       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Processador                                 ;
 ; Top-level Entity Name         ; Processador                                 ;
@@ -249,7 +249,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 14 21:31:10 2022
+    Info: Processing started: Wed Jun 15 08:51:41 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador -c Processador --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -260,7 +260,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file data.vh
     Info (12022): Found design unit 1: Data-Behavior File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 12
     Info (12023): Found entity 1: Data File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file controlcircuit.vhd
-    Info (12022): Found design unit 1: controlCircuit-LogicFunc File: C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd Line: 14
+    Info (12022): Found design unit 1: controlCircuit-Behavior File: C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd Line: 14
     Info (12023): Found entity 1: controlCircuit File: C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ULA-Behavior File: C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd Line: 18
@@ -284,18 +284,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file rg.vhd
     Info (12022): Found design unit 1: RG-Behavior File: C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd Line: 16
     Info (12023): Found entity 1: RG File: C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd Line: 4
 Info (12127): Elaborating entity "Processador" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Processador.vhd(120): used implicit default value for signal "R2_Out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 120
-Warning (10541): VHDL Signal Declaration warning at Processador.vhd(120): used implicit default value for signal "R3_In" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 120
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(120): object "done" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 120
-Warning (10541): VHDL Signal Declaration warning at Processador.vhd(121): used implicit default value for signal "w" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 121
-Warning (10541): VHDL Signal Declaration warning at Processador.vhd(121): used implicit default value for signal "func" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 121
-Warning (10541): VHDL Signal Declaration warning at Processador.vhd(122): used implicit default value for signal "Dado_In" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(122): object "Dado0_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(122): object "Dado1_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(122): object "Dado2_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(122): object "Dado3_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(122): object "DadoG_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
-Info (12128): Elaborating entity "Data" for hierarchy "Data:Dado" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 125
+Warning (10541): VHDL Signal Declaration warning at Processador.vhd(121): used implicit default value for signal "R2_Out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 121
+Warning (10541): VHDL Signal Declaration warning at Processador.vhd(121): used implicit default value for signal "R3_In" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 121
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(121): object "done" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 121
+Warning (10541): VHDL Signal Declaration warning at Processador.vhd(122): used implicit default value for signal "w" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
+Warning (10541): VHDL Signal Declaration warning at Processador.vhd(122): used implicit default value for signal "func" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 122
+Warning (10541): VHDL Signal Declaration warning at Processador.vhd(123): used implicit default value for signal "Dado_In" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 123
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(123): object "Dado0_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 123
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(123): object "Dado1_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 123
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(123): object "Dado2_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 123
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(123): object "Dado3_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 123
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(123): object "DadoG_Out" assigned a value but never read File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 123
+Info (12128): Elaborating entity "Data" for hierarchy "Data:Dado" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 126
 Warning (10631): VHDL Process Statement warning at Data.vhd(14): inferring latch(es) for signal or variable "DadoOut", which holds its previous value in one or more paths through the process File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 14
 Info (10041): Inferred latch for "DadoOut[0]" at Data.vhd(14) File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 14
 Info (10041): Inferred latch for "DadoOut[1]" at Data.vhd(14) File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 14
@@ -305,19 +305,18 @@ Info (10041): Inferred latch for "DadoOut[4]" at Data.vhd(14) File: C:/Users/Alc
 Info (10041): Inferred latch for "DadoOut[5]" at Data.vhd(14) File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 14
 Info (10041): Inferred latch for "DadoOut[6]" at Data.vhd(14) File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 14
 Info (10041): Inferred latch for "DadoOut[7]" at Data.vhd(14) File: C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd Line: 14
-Info (12128): Elaborating entity "R0" for hierarchy "R0:Reg0" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 127
-Info (12128): Elaborating entity "R1" for hierarchy "R1:Reg1" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 129
-Info (12128): Elaborating entity "R2" for hierarchy "R2:Reg2" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 131
-Info (12128): Elaborating entity "R3" for hierarchy "R3:Reg3" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 133
-Info (12128): Elaborating entity "RA" for hierarchy "RA:RegA" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 135
-Warning (10541): VHDL Signal Declaration warning at RA.vhd(10): used implicit default value for signal "DadoAOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Alcides/Documents/GitHub/Processador/RA.vhd Line: 10
-Info (12128): Elaborating entity "RG" for hierarchy "RG:RegG" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 137
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:UnidadeLogicaAritmetica" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 139
-Info (12128): Elaborating entity "controlCircuit" for hierarchy "controlCircuit:ControleCircuito" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 141
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Tue Jun 14 21:31:27 2022
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:34
+Info (12128): Elaborating entity "R0" for hierarchy "R0:Reg0" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 128
+Info (12128): Elaborating entity "R1" for hierarchy "R1:Reg1" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 130
+Info (12128): Elaborating entity "R2" for hierarchy "R2:Reg2" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 132
+Info (12128): Elaborating entity "R3" for hierarchy "R3:Reg3" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 134
+Info (12128): Elaborating entity "RA" for hierarchy "RA:RegA" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 136
+Info (12128): Elaborating entity "RG" for hierarchy "RG:RegG" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 138
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:UnidadeLogicaAritmetica" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 140
+Info (12128): Elaborating entity "controlCircuit" for hierarchy "controlCircuit:ControleCircuito" File: C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd Line: 142
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Wed Jun 15 08:51:51 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
 
 

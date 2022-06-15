@@ -18,16 +18,16 @@ ARCHITECTURE Behavior OF RG IS
 		PROCESS (DadoGIn, RGIn, RGOut, Reset, Clock, DadoArmazenado)
 			BEGIN
 			IF Reset = '1' THEN
-				-- Zerando o valor do Dado
+				-- Sinal de reset ativo, zera o valor do dado armazenado
 				DadoArmazenado <= "00000000";
 			ELSE
 				IF Clock'EVENT AND Clock = '1' THEN
 					-- Funciona apenas quando clock for igual a 1
 					IF RGIn = '1' THEN
-						-- Dado é armazenado
+						-- Sinal de entrada ativo, dado é armazenado
 						DadoArmazenado <= DadoGIn ;
 					ELSIF RGOut = '1' THEN
-						-- Dado é retirado
+						-- Sinal de saida rada ativo, dado é retirado
 						DadoGOut <= DadoArmazenado ;
 					END IF ;
 				END IF;

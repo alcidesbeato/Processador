@@ -119,13 +119,10 @@ ARCHITECTURE Behavior OF Processador IS
 	
 		-- Sinais internos para ligacao
     SIGNAL R0_In, R0_Out, R1_In, R1_Out, R2_In, R2_Out, R3_In, R3_Out, RG_In, RG_Out, RA_In,Add_Sub, extern, done  : STD_LOGIC;
-	SIGNAL w,func: STD_LOGIC_VECTOR(1 DOWNTO 0);
+	SIGNAL w, func: STD_LOGIC_VECTOR(1 DOWNTO 0);
     SIGNAL Dado_In, Dado_Out, Dado0_Out, Dado1_Out, Dado2_Out, Dado3_Out, DadoA_Out, DadoG_Out  : STD_LOGIC_VECTOR(7 DOWNTO 0);
     
 BEGIN
-	PROCESS(R0_In, R0_Out, R1_In, R1_Out, R2_In, R2_Out, R3_In, R3_Out, RG_In, RG_Out, RA_In,Add_Sub, extern, done, w,func, Dado_In, Dado_Out, Dado0_Out, Dado1_Out, Dado2_Out, Dado3_Out, DadoA_Out, DadoG_Out   )
-    
-	BEGIN 
         Dado: DATA PORT MAP (Dado_In, extern, Dado_Out); -- Componente do dado
 
         Reg0: R0 PORT MAP (Dado_Out, R0_In, R0_Out, Reset, Clock, Dado0_Out); -- Componente do registrador 0
@@ -143,5 +140,4 @@ BEGIN
         UnidadeLogicaAritmetica: ULA PORT MAP(DadoA_Out, Dado_Out, Add_Sub, DadoG_Out, RA_In, Reset, Clock); -- Componente da unidade logica aritmetica
         
         ControleCircuito: controlCircuit PORT MAP (Clock, Reset, w, func, R0_In, R0_Out, R1_In, R1_Out, R2_In, R3_Out, RG_In, RG_Out, RA_In, Add_Sub, extern, done); -- Componente da unidade de controle
-
 END Behavior ;

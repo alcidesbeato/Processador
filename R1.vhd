@@ -18,16 +18,16 @@ ARCHITECTURE Behavior OF R1 IS
 		PROCESS (Dado1In, R1In, R1Out, Reset, Clock, DadoArmazenado)
 			BEGIN
 			IF Reset = '1' THEN
-				-- Zerando o valor do Dado
+				-- Sinal de reset ativo, zera o valor do dado armazenado
 				DadoArmazenado <= "00000000";
 			ELSE
 				IF Clock'EVENT AND Clock = '1' THEN
 				 	-- Funciona apenas quando clock for igual a 1
 					IF R1In = '1' THEN
-						-- Dado é armazenado
+						-- Sinal de entrada ativo, dado é armazenado
 						DadoArmazenado <= Dado1In ;
 					ELSIF R1Out = '1' THEN
-						-- Dado é retirado
+						-- Sinal de saida ativo, dado é retirado
 						Dado1Out <= DadoArmazenado ;
 					END IF ;
 				END IF;
