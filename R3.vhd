@@ -3,13 +3,13 @@ USE ieee.std_logic_1164.all;
 
 ENTITY R3 IS
 	PORT (
-		Dado3In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-		R3In: IN STD_LOGIC;
-		R3Out: IN STD_LOGIC;
-		Reset : IN STD_LOGIC ;
-		Clock : IN STD_LOGIC ;
-		Dado3Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)
+		Dado3In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ; -- Vetor de entrada do dado
+		R3In: IN STD_LOGIC; -- Sinal de Entrada
+		R3Out: IN STD_LOGIC; -- Sinal de saida
+		Reset : IN STD_LOGIC ; -- Sinal de Reset
+		Clock : IN STD_LOGIC ; -- Sinal de Clock
+		Dado3Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- Vetor de saida do dado
+		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0) -- Buffer de armazenamento do dado
 	);
 END R3 ;
 

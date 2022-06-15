@@ -3,13 +3,13 @@ USE ieee.std_logic_1164.all;
 
 ENTITY R0 IS
 	PORT (
-		Dado0In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-		R0In: IN STD_LOGIC;
-		R0Out: IN STD_LOGIC;
-		Reset : IN STD_LOGIC ;
-		Clock : IN STD_LOGIC ;
-		Dado0Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)
+		Dado0In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ; -- Vetor de entrada do dado
+		R0In: IN STD_LOGIC; -- Sinal de Entrada
+		R0Out: IN STD_LOGIC; -- Sinal de Saida
+		Reset : IN STD_LOGIC ; -- Sinal de Reset
+		Clock : IN STD_LOGIC ; -- Sinal de Clock
+		Dado0Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- Vetor de saida do dado
+		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0) -- Buffer de armazenamento do dado
 	);
 END R0 ;
 
@@ -24,10 +24,10 @@ ARCHITECTURE Behavior OF R0 IS
 				IF Clock'EVENT AND Clock = '1' THEN
 					-- Funciona apenas quando clock for igual a 1
 					IF R0In = '1' THEN
-					-- Dado é armazenado
+						-- Dado é armazenado
 						DadoArmazenado <= Dado0In ;
 					ELSIF R0Out = '1' THEN
-					-- Dado é retirado
+						-- Dado é retirado
 						Dado0Out <= DadoArmazenado ;
 					END IF ;
 				END IF;

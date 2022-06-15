@@ -1,0 +1,259 @@
+# Reading pref.tcl
+# do Processador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:01 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Processador
+# -- Compiling architecture Behavior of Processador
+# End time: 22:06:01 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:01 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Data
+# -- Compiling architecture Behavior of Data
+# End time: 22:06:01 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:01 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlCircuit
+# -- Compiling architecture LogicFunc of controlCircuit
+# End time: 22:06:02 on Jun 14,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:03 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity ULA
+# -- Compiling architecture Behavior of ULA
+# End time: 22:06:03 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:04 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity R0
+# -- Compiling architecture Behavior of R0
+# End time: 22:06:04 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:04 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity R1
+# -- Compiling architecture Behavior of R1
+# End time: 22:06:04 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:04 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity R2
+# -- Compiling architecture Behavior of R2
+# End time: 22:06:05 on Jun 14,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:05 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity R3
+# -- Compiling architecture Behavior of R3
+# End time: 22:06:05 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/RA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:05 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/RA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RA
+# -- Compiling architecture Behavior of RA
+# End time: 22:06:05 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:06:06 on Jun 14,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RG
+# -- Compiling architecture Behavior of RG
+# End time: 22:06:06 on Jun 14,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.processador(behavior)
+# vsim work.processador(behavior) 
+# Start time: 22:06:15 on Jun 14,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.processador(behavior)
+# Loading work.data(behavior)
+# Loading work.r0(behavior)
+# Loading work.r1(behavior)
+# Loading work.r2(behavior)
+# Loading work.r3(behavior)
+# Loading work.ra(behavior)
+# Loading work.rg(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.ula(behavior)
+# Loading work.controlcircuit(logicfunc)
+restart
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ps -dutycycle 50 -starttime 0ns -endtime 2000ns sim:/processador/Clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 2000ns sim:/processador/Clock
+wave create -driver freeze -pattern constant -value 1 -starttime 0ns -endtime 100ns sim:/processador/Reset
+wave modify -driver freeze -pattern constant -value 0 -starttime 100ns -endtime 2000ns Edit:/processador/Reset
+wave create -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 2000ns sim:/processador/w
+wave edit change_value -start 100ns -end 200ns -value 1 Edit:/processador/w(1)
+wave edit change_value -start 200ns -end 300ns -value 1 Edit:/processador/w(0)
+wave edit change_value -start 300ns -end 400ns -value 1 Edit:/processador/w
+# Value length (1) does not equal array index length (2).
+# 
+wave create -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 200ns sim:/processador/func
+wave create -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 2000ns sim:/processador/func
+add wave -position end -autoscale 1 -format Literal -height 17 -editable 2 Edit:/processador/w
+wave edit change_value -start 200ns -end 300ns -value 1 Edit:/processador/func(1)
+wave edit change_value -start 200ns -end 300ns -value 0 Edit:/processador/func
+# Value length (1) does not equal array index length (2).
+# 
+# Note :: PA Debug File '' not found. PA Dataflow Coloring not enabled.
+wave create -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 2000ns sim:/processador/func
+wave create -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 2000ns sim:/processador/w
+wave edit change_value -start 200ns -end 300ns -value 1 Edit:/processador/func(0)
+wave edit change_value -start 300ps -end 600ps -value 1 Edit:/processador/func(1)
+wave edit change_value -start 300ns -end 600ns -value 1 Edit:/processador/func(1)
+wave edit change_value -start 600ns -end 900ns -value 1 Edit:/processador/func(1)
+wave edit change_value -start 600ns -end 900ns -value 1 Edit:/processador/func(0)
+wave edit change_value -start 400ns -end 500ns -value 1 Edit:/processador/w(0)
+wave edit change_value -start 500ns -end 600ns -value 1 Edit:/processador/w(1)
+wave edit change_value -start 700ns -end 800ns -value 1 Edit:/processador/w(0)
+wave edit change_value -start 800ns -end 900ns -value 1 Edit:/processador/w(1)
+add wave -position 2  sim:/processador/Dado_In
+add wave -position end  sim:/processador/Dado_In
+wave create -pattern constant -value 10001010 -range 7 0 -starttime 0ns -endtime 2000ns sim:/processador/Dado_In
+add wave -position end  sim:/processador/R0_In
+add wave -position end  sim:/processador/R0_Out
+add wave -position end  sim:/processador/R1_In
+add wave -position end  sim:/processador/R1_Out
+add wave -position end  sim:/processador/R2_In
+add wave -position end  sim:/processador/R2_Out
+add wave -position end  sim:/processador/R3_In
+add wave -position end  sim:/processador/R3_Out
+add wave -position end  sim:/processador/RG_In
+add wave -position end  sim:/processador/RG_Out
+add wave -position end  sim:/processador/RA_In
+add wave -position end  sim:/processador/Add_Sub
+add wave -position end  sim:/processador/extern
+add wave -position end  sim:/processador/done
+add wave -position end  sim:/processador/R0_In
+add wave -position end  sim:/processador/R0_Out
+add wave -position end  sim:/processador/R1_In
+add wave -position end  sim:/processador/R1_Out
+add wave -position end  sim:/processador/R2_In
+add wave -position end  sim:/processador/R2_Out
+add wave -position end  sim:/processador/R3_In
+add wave -position end  sim:/processador/R3_Out
+add wave -position end  sim:/processador/RG_In
+add wave -position end  sim:/processador/RG_Out
+add wave -position end  sim:/processador/RA_In
+add wave -position end  sim:/processador/Add_Sub
+add wave -position end  sim:/processador/extern
+add wave -position end  sim:/processador/done
+add wave -position end  sim:/processador/Dado_Out
+add wave -position end  sim:/processador/Dado0_Out
+add wave -position end  sim:/processador/Dado1_Out
+add wave -position end  sim:/processador/Dado2_Out
+add wave -position end  sim:/processador/Dado3_Out
+add wave -position end  sim:/processador/DadoA_Out
+add wave -position end  sim:/processador/DadoG_Out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Alcides/Documents/GitHub/Processador/simulation/modelsim/wave.do
+wave editwrite -file C:/Users/Alcides/Documents/GitHub/Processador/simulation/modelsim/wave.do -append
+run -all
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/R0_In
+add wave -position insertpoint  \
+sim:/processador/R1_In
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/R1_In
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/R1_Out
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/R2_In
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/R2_Out
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/R3_In
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/R3_Out
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/RG_In
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/RG_Out
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/RA_In
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/Add_Sub
+wave create -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/processador/extern
+wave create -pattern constant -value 0 -starttime 0ps -endtime 2000ps sim:/processador/done
+wave edit change_value -start 100ns -end 200ns -value 1 Edit:/processador/R0_In
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/extern
+wave create -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/done
+wave edit change_value -start 100ns -end 200ns -value 1 Edit:/processador/extern
+wave edit change_value -start 100ns -end 200ns -value 1 Edit:/processador/done
+add wave -position end  sim:/processador/Dado_Out
+add wave -position end  sim:/processador/Dado0_Out
+add wave -position end  sim:/processador/Dado1_Out
+add wave -position end  sim:/processador/Dado2_Out
+add wave -position end  sim:/processador/Dado3_Out
+add wave -position end  sim:/processador/DadoA_Out
+run -all
+restart
+add wave -position end  sim:/processador/Dado_Out
+add wave -position end  sim:/processador/Dado0_Out
+add wave -position end  sim:/processador/Dado1_Out
+add wave -position end  sim:/processador/Dado2_Out
+add wave -position end  sim:/processador/Dado3_Out
+add wave -position end  sim:/processador/DadoA_Out
+add wave -position end  sim:/processador/DadoG_Out
+run -all
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# End time: 08:43:44 on Jun 15,2022, Elapsed time: 10:37:29
+# Errors: 0, Warnings: 0

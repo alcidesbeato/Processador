@@ -4,14 +4,14 @@ USE ieee.std_logic_signed.all;
 
 ENTITY ULA IS
 	PORT ( 
-			A: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-			B : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-			AddSub : IN STD_LOGIC ;
-			AluOut : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-			RAIn: IN STD_LOGIC;
-			Reset : IN STD_LOGIC ;
-			Clock : IN STD_LOGIC ;
-			DadoArmazenado: BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0)
+			A: IN STD_LOGIC_VECTOR(7 DOWNTO 0) ; -- Vetor de entrada do dado
+			B : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ; -- Vetor de entrada do dado
+			AddSub : IN STD_LOGIC ; -- Sinal de adicao ou subtracao
+			AluOut : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- Vetor de saida do dado
+			RAIn: IN STD_LOGIC; -- Sinal de entrada
+			Reset : IN STD_LOGIC ; -- Sinal de Reset
+			Clock : IN STD_LOGIC ; -- Sinal de Clock
+			DadoArmazenado: BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0) -- Buffer de armazenamento do dado
 			) ;
 END ULA ;
 
@@ -29,10 +29,10 @@ ARCHITECTURE Behavior OF ULA IS
 					IF RAIn = '1' THEN
 						-- Dado é armazenado
 						DadoArmazenado <= A ;
-					ELSIF AddSub = '1' THEN
+					ELSIF AddSub = '0' THEN
 						-- Soma é executada
 						AluOut <= DadoArmazenado + B ;
-					ELSIF AddSub = '0' THEN
+					ELSIF AddSub = '1' THEN
 						-- Subtração é executada
 						AluOut <= DadoArmazenado - B ;
 					END IF;

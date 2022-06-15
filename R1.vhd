@@ -3,13 +3,13 @@ USE ieee.std_logic_1164.all;
 
 ENTITY R1 IS
 	PORT (
-		Dado1In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ;
-		R1In: IN STD_LOGIC;
-		R1Out: IN STD_LOGIC;
-		Reset : IN STD_LOGIC ;
-		Clock : IN STD_LOGIC ;
-		Dado1Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)
+		Dado1In : IN STD_LOGIC_VECTOR(7 DOWNTO 0) ; -- Vetor de entrada do dado 
+		R1In: IN STD_LOGIC; -- Sinal de Entrada
+		R1Out: IN STD_LOGIC; -- Sinal de Saida
+		Reset : IN STD_LOGIC ; -- Sinal de Reset
+		Clock : IN STD_LOGIC ; -- SInal de Clock
+		Dado1Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- Vetor de saida do dado
+		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)  -- Buffer de armazenamento do dado
 	);
 END R1 ;
 
@@ -22,7 +22,7 @@ ARCHITECTURE Behavior OF R1 IS
 				DadoArmazenado <= "00000000";
 			ELSE
 				IF Clock'EVENT AND Clock = '1' THEN
-				 	- Funciona apenas quando clock for igual a 1
+				 	-- Funciona apenas quando clock for igual a 1
 					IF R1In = '1' THEN
 						-- Dado é armazenado
 						DadoArmazenado <= Dado1In ;
