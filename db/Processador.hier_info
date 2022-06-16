@@ -1,20 +1,20 @@
 |Processador
-Clock => R0:Reg0.Clock
-Clock => R1:Reg1.Clock
-Clock => R2:Reg2.Clock
-Clock => R3:Reg3.Clock
-Clock => RA:RegA.Clock
-Clock => RG:RegG.Clock
-Clock => ULA:UnidadeLogicaAritmetica.Clock
-Clock => controlCircuit:ControleCircuito.Clock
-Reset => R0:Reg0.Reset
-Reset => R1:Reg1.Reset
-Reset => R2:Reg2.Reset
-Reset => R3:Reg3.Reset
-Reset => RA:RegA.Reset
-Reset => RG:RegG.Reset
-Reset => ULA:UnidadeLogicaAritmetica.Reset
-Reset => controlCircuit:ControleCircuito.Reset
+Clock1 => controlCircuit:ControleCircuito.Clock
+Clock1 => R0:Reg0.Clock
+Clock1 => R1:Reg1.Clock
+Clock1 => R2:Reg2.Clock
+Clock1 => R3:Reg3.Clock
+Clock1 => RA:RegA.Clock
+Clock1 => RG:RegG.Clock
+Clock1 => ULA:UnidadeLogicaAritmetica.Clock
+Reset1 => controlCircuit:ControleCircuito.Reset
+Reset1 => R0:Reg0.Reset
+Reset1 => R1:Reg1.Reset
+Reset1 => R2:Reg2.Reset
+Reset1 => R3:Reg3.Reset
+Reset1 => RA:RegA.Reset
+Reset1 => RG:RegG.Reset
+Reset1 => ULA:UnidadeLogicaAritmetica.Reset
 
 
 |Processador|Data:Dado
@@ -42,6 +42,37 @@ DadoOut[4] <= DadoOut[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
 DadoOut[5] <= DadoOut[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
 DadoOut[6] <= DadoOut[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 DadoOut[7] <= DadoOut[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Processador|controlCircuit:ControleCircuito
+Clock => state~1.DATAIN
+Reset => state~3.DATAIN
+W[0] => Mux2.IN5
+W[0] => Mux3.IN5
+W[0] => Mux4.IN5
+W[1] => Mux2.IN4
+W[1] => Mux3.IN4
+W[1] => Mux4.IN4
+W[1] => Selector2.IN3
+Func[0] => Mux0.IN5
+Func[0] => Mux1.IN5
+Func[1] => Mux0.IN4
+Func[1] => Mux1.IN4
+Func[1] => Selector2.IN4
+R0In <= <VCC>
+R0Out <= <VCC>
+R1In <= <VCC>
+R1Out <= <VCC>
+R2In <= <VCC>
+R2Out <= <VCC>
+R3In <= R0In.DB_MAX_OUTPUT_PORT_TYPE
+R3Out <= <VCC>
+RGIn <= <VCC>
+RGOut <= <VCC>
+RAIn <= <VCC>
+AddSub <= AddSub$latch.DB_MAX_OUTPUT_PORT_TYPE
+Extern <= <VCC>
+Done <= <VCC>
 
 
 |Processador|R0:Reg0
@@ -639,89 +670,5 @@ DadoArmazenado[4] <= DadoArmazenado[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 DadoArmazenado[5] <= DadoArmazenado[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 DadoArmazenado[6] <= DadoArmazenado[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 DadoArmazenado[7] <= DadoArmazenado[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Processador|controlCircuit:ControleCircuito
-Clock => R3In~reg0.CLK
-Clock => R3Out~reg0.CLK
-Clock => R2In~reg0.CLK
-Clock => RGOut~reg0.CLK
-Clock => RGIn~reg0.CLK
-Clock => AddSub~reg0.CLK
-Clock => R2Out~reg0.CLK
-Clock => RAIn~reg0.CLK
-Clock => R1Out~reg0.CLK
-Clock => R0Out~reg0.CLK
-Clock => R1In~reg0.CLK
-Clock => Done~reg0.CLK
-Clock => R0In~reg0.CLK
-Clock => Extern~reg0.CLK
-Reset => ~NO_FANOUT~
-W[0] => Mux0.IN2
-W[0] => Mux1.IN2
-W[0] => Mux2.IN2
-W[0] => Mux3.IN2
-W[0] => Mux4.IN2
-W[0] => Mux5.IN2
-W[0] => Mux6.IN2
-W[0] => Mux7.IN2
-W[0] => Mux8.IN2
-W[0] => Mux9.IN2
-W[0] => Mux10.IN2
-W[0] => Mux11.IN2
-W[1] => Mux0.IN1
-W[1] => Mux1.IN1
-W[1] => Mux2.IN1
-W[1] => Mux3.IN1
-W[1] => Mux4.IN1
-W[1] => Mux5.IN1
-W[1] => Mux6.IN1
-W[1] => Mux7.IN1
-W[1] => Mux8.IN1
-W[1] => Mux9.IN1
-W[1] => Mux10.IN1
-W[1] => Mux11.IN1
-Func[0] => Mux12.IN2
-Func[0] => Mux13.IN2
-Func[0] => Mux14.IN5
-Func[0] => Mux15.IN2
-Func[0] => Mux16.IN2
-Func[0] => Mux17.IN2
-Func[0] => Mux18.IN3
-Func[0] => Mux19.IN3
-Func[0] => Mux20.IN3
-Func[0] => Mux21.IN3
-Func[0] => Mux22.IN3
-Func[0] => Mux23.IN2
-Func[0] => Mux24.IN2
-Func[0] => Mux25.IN2
-Func[1] => Mux12.IN1
-Func[1] => Mux13.IN1
-Func[1] => Mux14.IN4
-Func[1] => Mux15.IN1
-Func[1] => Mux16.IN1
-Func[1] => Mux17.IN1
-Func[1] => Mux18.IN2
-Func[1] => Mux19.IN2
-Func[1] => Mux20.IN2
-Func[1] => Mux21.IN2
-Func[1] => Mux22.IN2
-Func[1] => Mux23.IN1
-Func[1] => Mux24.IN1
-Func[1] => Mux25.IN1
-R0In <= R0In~reg0.DB_MAX_OUTPUT_PORT_TYPE
-R0Out <= R0Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-R1In <= R1In~reg0.DB_MAX_OUTPUT_PORT_TYPE
-R1Out <= R1Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-R2In <= R2In~reg0.DB_MAX_OUTPUT_PORT_TYPE
-R2Out <= R2Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-R3In <= R3In~reg0.DB_MAX_OUTPUT_PORT_TYPE
-R3Out <= R3Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-RGIn <= RGIn~reg0.DB_MAX_OUTPUT_PORT_TYPE
-RGOut <= RGOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-RAIn <= RAIn~reg0.DB_MAX_OUTPUT_PORT_TYPE
-AddSub <= AddSub~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Extern <= Extern~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Done <= Done~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

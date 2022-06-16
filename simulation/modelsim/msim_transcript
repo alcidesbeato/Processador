@@ -12,40 +12,40 @@
 # 
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:02 on Jun 15,2022
+# Start time: 00:49:47 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/Processador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Processador
 # -- Compiling architecture Behavior of Processador
-# End time: 11:11:02 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:47 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:02 on Jun 15,2022
+# Start time: 00:49:47 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/Data.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Data
 # -- Compiling architecture Behavior of Data
-# End time: 11:11:02 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:47 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:02 on Jun 15,2022
+# Start time: 00:49:47 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/controlCircuit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controlCircuit
 # -- Compiling architecture Behavior of controlCircuit
-# End time: 11:11:02 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:47 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:02 on Jun 15,2022
+# Start time: 00:49:47 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/ULA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -54,103 +54,72 @@
 # -- Loading package STD_LOGIC_SIGNED
 # -- Compiling entity ULA
 # -- Compiling architecture Behavior of ULA
-# End time: 11:11:03 on Jun 15,2022, Elapsed time: 0:00:01
+# End time: 00:49:47 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:03 on Jun 15,2022
+# Start time: 00:49:47 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity R0
 # -- Compiling architecture Behavior of R0
-# End time: 11:11:03 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:47 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:03 on Jun 15,2022
+# Start time: 00:49:47 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity R1
 # -- Compiling architecture Behavior of R1
-# End time: 11:11:03 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:48 on Jun 16,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:03 on Jun 15,2022
+# Start time: 00:49:48 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity R2
 # -- Compiling architecture Behavior of R2
-# End time: 11:11:03 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:48 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:03 on Jun 15,2022
+# Start time: 00:49:48 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/R3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity R3
 # -- Compiling architecture Behavior of R3
-# End time: 11:11:03 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:48 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/RA.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:03 on Jun 15,2022
+# Start time: 00:49:48 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/RA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RA
 # -- Compiling architecture Behavior of RA
-# End time: 11:11:03 on Jun 15,2022, Elapsed time: 0:00:00
+# End time: 00:49:48 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:11:03 on Jun 15,2022
+# Start time: 00:49:48 on Jun 16,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/Alcides/Documents/GitHub/Processador/RG.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RG
 # -- Compiling architecture Behavior of RG
-# End time: 11:11:04 on Jun 15,2022, Elapsed time: 0:00:01
+# End time: 00:49:48 on Jun 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.processador(behavior)
-# vsim work.processador(behavior) 
-# Start time: 11:11:14 on Jun 15,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.processador(behavior)
-# Loading work.data(behavior)
-# Loading work.controlcircuit(behavior)
-# Loading work.r0(behavior)
-# Loading work.r1(behavior)
-# Loading work.r2(behavior)
-# Loading work.r3(behavior)
-# Loading work.ra(behavior)
-# Loading work.rg(behavior)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading work.ula(behavior)
-wave create -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 2000ns sim:/processador/Clock
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-wave create -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 2000ns sim:/processador/Clock
-wave create -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 2000ns sim:/processador/Reset
-wave create -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 2000ns sim:/processador/func
-wave create -pattern constant -value 00 -range 1 0 -starttime 0ns -endtime 2000ns sim:/processador/w
-wave edit change_value -start 0ns -end 100ns -value 1 Edit:/processador/Reset
-add wave -position end  sim:/processador/R0_In
-add wave -position end  sim:/processador/extern
-add wave -position end  sim:/processador/done
-run
-# End time: 11:23:13 on Jun 15,2022, Elapsed time: 0:11:59
-# Errors: 0, Warnings: 0

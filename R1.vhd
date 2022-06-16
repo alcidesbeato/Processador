@@ -7,7 +7,7 @@ ENTITY R1 IS
 		R1In: IN STD_LOGIC; -- Sinal de Entrada
 		R1Out: IN STD_LOGIC; -- Sinal de Saida
 		Reset : IN STD_LOGIC ; -- Sinal de Reset
-		Clock : IN STD_LOGIC ; -- SInal de Clock
+		Clock : IN STD_LOGIC ; -- Sinal de Clock
 		Dado1Out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- Vetor de saida do dado
 		DadoArmazenado: BUFFER STD_LOGIC_VECTOR( 7 DOWNTO 0)  -- Buffer de armazenamento do dado
 	);
