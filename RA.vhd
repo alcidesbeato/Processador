@@ -1,3 +1,7 @@
+-- Alcides Gomes Beato Neto 19060987   
+-- Thiago Loureiro Kosciuk 21005277
+-- Registrador
+
 LIBRARY ieee ;
 USE ieee.std_logic_1164.all;
 

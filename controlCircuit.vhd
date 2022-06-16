@@ -1,3 +1,5 @@
+-- Alcides Gomes Beato Neto 19060987   
+-- Thiago Loureiro Kosciuk 21005277
 -- Circuito de controle
 
 LIBRARY ieee;
